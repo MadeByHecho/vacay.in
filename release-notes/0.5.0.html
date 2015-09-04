@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vacay &ndash; Version 0.5.0</title>
+  <meta name="viewport" content="width=device-width">
+  <script>
+    var width = screen.width;
+    if (width < 640) {
+      var viewport = document.querySelector("meta[name=viewport]");
+      viewport.setAttribute('content', 'width=640');
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div id="outer-wrapper">
+    <div id="title-div">
+      <a href="http://vacay.in/"><h1>Vacay</h1></a>
+      <h2>Release Notes</h2>
+      <div id="release-notes-wrapper">
+
+        <hr/>
+
+        <h2>Version 0.5.0</h2>
+        <h3>Tuesday, March 5, 2015</h3>
+
+        <p>[NEW] Adds an option to keep read articles for less time.</p>
+        <p>[CHANGE] Max Sync Count is now ignored, Unread will always sync all unread articles. (Previously it was syncing the oldest X articles).</p>
+        <p>[CHANGE] Font sizes will no longer sync. They can now be set independently on the iPhone and iPad versions.</p>
+        <p>[FIX] Rotation bug when image viewed full screen.</p>
+        <p>[FIX] NYT feeds no longer show blank images.</p>
+        <p>[FIX] Facebook sharing should now work properly.</p>
+        <p>[FIX] The badge counter on the app icon would not be updated in the background.</p>
+        <p>[FIX] Crash when sharing with Mail</p>
+        <p>[FIX] Crash that could occur after clearing the image cache.</p>
+        <p>[FIX] Crash when bringing up Workflow or other remote view controllers.</p>
+        <p>[FIX] Settings could get reset to default.</p>
+        <p>[FIX] Visual issue with articles that include "tooltip" class elements.</p>
+        <p>[FIX] If a Fever user had a lot of unread items in Sparks, new articles weren't coming through.</p>
+
+        <hr>
+
+      </div>
+      <p>If you have any problems at all, <a href="mailto:support@hecho.io">get in touch</a>. If you enjoy Vacay, please consider <a href="">leaving us a nice review</a>.</p>
+    </div>
+    <hr/>
+    <footer>
+      <p>&copy; <a href="http://hecho.io/">Hecho</a> 2015. All rights reserved.</p>
+    </footer>
+  </div>
+  </div>
+</body>
+
+</html>
