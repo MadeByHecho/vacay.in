@@ -1,4 +1,5 @@
 html {
+  color: black;
   background: url(../images/background.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,25 +13,8 @@ head {
   height: 0;
 }
 
-/* BEGIN input placeholder colors */
-*::-webkit-input-placeholder {
-    color: rgb(211, 211, 211);
-}
-*:-moz-placeholder {
-    color: rgb(211, 211, 211);
-}
-*::-moz-placeholder {
-    color: rgb(211, 211, 211);
-}
-*:-ms-input-placeholder {
-    color: rgb(211, 211, 211);
-}
-/* END input placeholder colors */
-
 body {
   margin: 0;
-  background-color: rgba(51, 51, 51, 0.35);
-  height: 100%;
 }
 
 body div#image-overlay-text {
@@ -55,69 +39,132 @@ p {
   margin: 0em;
 }
 
+div#pitch-text {
+  margin-top: 3em;
+}
+
 div#pitch-text p {
   width: 65%;
-  margin-top: 3em;
+  margin-top: 1em;
   margin-left: auto;
-  margin-bottom: 3em;
   margin-right: auto;
+  font-size: 1.25em;
 }
 
-div.mc-field-group {
-  text-align: center;
-  vertical-align: center;
+/*  Mail Chimp */
+
+#mc_embed_signup {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  padding: 0;
 }
 
-div.mc-field-group input#mce-EMAIL {
+#mc_embed_signup label {
+  display: none;
+}
+
+#mc_embed_signup #mce-EMAIL {
+  display: block;
+  color: rgb(1, 201, 255);
+  border: none;
+  width: 100%;
+  height: 46px;
+  margin-bottom: 0;
+  padding: 0;
+  border-radius: 40px;
+  box-sizing: border-box;
   padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  margin-right: 1em;
-  border: none;
-  border-bottom: solid 2px rgb(241, 241, 241);
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(241, 241, 241);
-  text-align: left;
-  font-family: 'AvenirNext-Heavy', 'Open Sans Condensed', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
-  font-size:20px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+  margin: 2em 0 1em;
+  font-family: 'AvenirNext-Regular', 'Open Sans Condensed', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+  font-size: 16px;
   font-weight: 700;
 }
 
-div.mc-field-group input#mce-EMAIL:focus {
-  outline: 0;
+#mc_embed_signup #mc-embedded-subscribe {
+  position: absolute;
+  height: 46px;
+  width: 60px;
+  top: 0px;
+  right: 0;
+  border-radius: 40px;
+  background: #fff url('../images/icon-arrow.png') center center no-repeat;
+  border:none;
 }
 
-div.mc-field-group input#mc-embedded-subscribe {
-  background-color: rgb(1, 210, 196);
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  border: none;
-  display: inline-block;
-  cursor: pointer;
-  color: rgb(241, 241, 241);
-  font-family: 'AvenirNext-Heavy', 'Open Sans Condensed', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+  #mc_embed_signup #mc-embedded-subscribe{
+    background: #fff url('../images/icon-arrow@2x.png') center center no-repeat;
+    background-size: 50%;
+  }
 }
 
-div.mc-field-group input#mc-embedded-subscribe:hover {
-	background-color: rgb(3, 172, 161);
+#mc_embed_signup #mce-responses {
+  display: block;
+  color: #756FF1;
 }
 
-div.mc-field-group input#mc-embedded-subscribe:active {
-	position:relative;
-	top:1px;
+#mc_embed_signup #mc-embedded-subscribe:hover {
+  opacity: .5;
 }
+
+#mc_embed_signup input:focus{
+  outline: none;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  display: block;
+  color: #fff;
+  background: #FF6C6C !important;
+  border-radius: 40px;
+  line-height: 2em;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(61, 61, 61, .4);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(61, 61, 61, .4);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: rgba(61, 61, 61, .4);
+}
+
+:-ms-input-placeholder {
+  color: rgba(61, 61, 61, .4);
+}
+
+/* Footer */
 
 footer p {
   color: rgba(200, 200, 200, 0.7);
-  position: fixed;
-  bottom: 0.2em;
   width: 100%;
   font-size: 14px;
+}
+
+footer a {
+  color: rgba(200, 200, 200, 0.7);
+  width: 100%;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Mobile */
+
+@media (max-width: 667px) {
+  body {
+    font-size: 75%;
+  }
+
+  #mc_embed_signup {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
